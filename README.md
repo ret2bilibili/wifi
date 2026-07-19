@@ -11,3 +11,10 @@ wifi，DNS劫持，攻击者脚本
 2.python a ttack.py -t wifi的IP --scan -d 源ip
 3.例如：python attack.py -t 172.16.69.1 --scan -d www.4399.com
 （攻击者的恶意“目标ip”默认为97.107.130.225，即http://www.rohitab.com/）
+
+结果:
+如果结果显示打勾,即成功
+如果显示打叉,即失败有几种可能:
+1.DNS在脚本执行前,访问过,正确的ip储存在了缓存里
+2.源目的在白名单
+3.局域网ip写错了.
